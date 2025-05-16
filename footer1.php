@@ -34,7 +34,9 @@
 
         <!-- About -->
         <div class="col-md-4">
-          <h5 class="fw-bold mb-3">PropertyPortal</h5>
+          <a href="index.php" class="logo">
+        <img src="logo.png" alt="Housing Management Society" height="100px">
+    </a>
           <p>Your one-stop solution for property management. Find, rent, or sell properties with ease.</p>
           <div class="d-flex gap-3 mt-3">
             <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
@@ -58,7 +60,7 @@
             </li>
             <li class="d-flex">
               <i class="fas fa-envelope me-2 mt-1"></i>
-              <span>info@propertyportal.com</span>
+              <span>info@housingsystem.com</span>
             </li>
           </ul>
         </div>
@@ -78,7 +80,7 @@
 
     <!-- Copyright -->
     <div class="mt-2 pt-2 text-center border-top border-white">
-      <p class="mb-2">&copy; <?php echo date("Y"); ?> Housing Society Management System. All rights reserved.</p>
+      <p class="mb-2">&copy; <?php echo date("Y"); ?> Housing Society Management System</p>
     </div>
   </footer>
 

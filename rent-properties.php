@@ -25,7 +25,7 @@
         <h2 class="h3 fw-bold mb-0">Recent Properties</h2>
       </div>
       <div class="col-6 text-end">
-        <a href="#" class="btn btn-outline-primary d-inline-flex align-items-center">
+        <a href="rent-properties.php" class="btn btn-outline-primary d-inline-flex align-items-center">
           View All <i class="bi bi-arrow-right ms-2"></i>
         </a>
       </div>
@@ -91,7 +91,7 @@
             </div>
             <div class="d-flex justify-content-between align-items-center">
               <span class="fw-bold text-primary"><?= $property["price"] ?></span>
-              <a href="#" class="btn btn-sm btn-outline-primary">Details</a>
+              <a href="tel:03224318049" class="btn btn-sm btn-outline-primary">Details</a>
             </div>
           </div>
         </div>

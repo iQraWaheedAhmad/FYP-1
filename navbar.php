@@ -241,14 +241,14 @@ require_once 'config.php';
 <!-- Navbar -->
 <nav>
   <div class="container">
-    <a href="#" class="logo">
+    <a href="index.php" class="logo">
         <img src="logo.png" alt="Housing Management Society" height="100px">
       <!-- <i class="fas fa-home"></i> HousingManagementSociety -->
     </a>
     <div class="nav-links">
-      <a href="#">Home</a>
-      <a href="rent-properties.php">Rent List</a>
-      <a href="index1.php">Login</a>
+      <a href="index.php">Home</a>
+      <!-- <a href="rent-properties.php">Rent List</a> -->
+      <a href="index1.php">Resident</a>
       <a href="index1.php">Admin</a>
       <a href="contact.php">Contact Us</a>
     </div>

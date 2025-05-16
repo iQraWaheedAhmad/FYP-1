@@ -68,9 +68,7 @@ if(isset($_POST['process_complaint']))
 }
 
 include('header.php');
-
 ?>
-
 <div class="container-fluid px-4">
     <h1 class="mt-4">View Complaints</h1>
     <ol class="breadcrumb mb-4">
