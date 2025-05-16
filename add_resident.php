@@ -16,10 +16,11 @@ if(isset($_POST['add_resident']))
 	    $errors[] = 'Please enter your name';
   	}
 	  if (empty($ssn)) {
-        $errors[] = 'SSN is required';
-    } elseif (strlen($ssn) != 9) {
-        $errors[] = 'SSN must be exactly 9 digits';
-    } else {
+        $errors[] = 'email is required';
+    // } elseif (strlen($ssn) != 9) {
+    //     $errors[] = 'SSN must be exactly 9 digits';
+    } 
+	else {
         // Check if SSN is already registered
         $stmt = $pdo->prepare("SELECT COUNT(*) FROM resident WHERE ssn = ?");
         $stmt->execute([$ssn]);
@@ -75,7 +76,7 @@ include('header.php');
 ?>
 
 <div class="container-fluid px-4">
-    <h1 class="mt-4">Add Resident</h1>
+    <h1 class="mt-4" style="color: white;">Add Resident</h1>
     <ol class="breadcrumb mb-4">
     	<li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
         <li class="breadcrumb-item"><a href="resident.php">Resident Management</a></li>
@@ -104,8 +105,8 @@ include('header.php');
 				    	<input type="text" class="form-control" id="name" name="name" placeholder="Enter name">
 				  	</div>
 				  	<div class="mb-3">
-				    	<label for="ssn">SSN</label>
-				    	<input type="text" class="form-control" id="ssn" name="ssn" placeholder="Enter ssn">
+				    	<label for="ssn">Email</label>
+				    	<input type="text" class="form-control" id="ssn" name="ssn" placeholder="Enter Email">
 				  	</div>
 					  <div class="mb-3">
                         <label for="house_id">House ID</label>

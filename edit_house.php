@@ -81,7 +81,7 @@ include('header.php');
 		<div class="card">
 			<div class="card-header">
 				<h5 class="card-title">Edit House Data</h5>
-                <?php $house['id']?>
+                <!-- <?php $house['id'];?> -->
 			</div>
 			<div class="card-body">
 				<form id="add-house-form" method="POST">

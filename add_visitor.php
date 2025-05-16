@@ -66,7 +66,7 @@ include('header.php');
 ?>
 
 <div class="container-fluid px-4">
-    <h1 class="mt-4">Add Visitor</h1>
+    <h1 class="mt-4" style="color: white;">Add Visitor</h1>
     <ol class="breadcrumb mb-4">
     	<li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
         <li class="breadcrumb-item"><a href="visitor.php">Visitor Management</a></li>

@@ -58,7 +58,7 @@ include('header.php');
 ?>
 
 <div class="container-fluid px-4">
-<h1 class="mt-4">Book Facility</h1>
+<h1 class="mt-4" style="color: white;">Book Facility</h1>
     <ol class="breadcrumb mb-4">
     	<li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
         <li class="breadcrumb-item"><a href="facility.php">Facility Management</a></li>

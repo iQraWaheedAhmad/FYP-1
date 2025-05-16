@@ -68,7 +68,7 @@ include('header.php');
 ?>
 
 <div class="container-fluid px-4">
-    <h1 class="mt-4">Add Maintenance Bill Data</h1>
+    <h1 class="mt-4" style="color: white;">Add Maintenance Bill Data</h1>
     <ol class="breadcrumb mb-4">
     	<li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
         <li class="breadcrumb-item"><a href="maintenace.php">Maintenance Bills Management</a></li>

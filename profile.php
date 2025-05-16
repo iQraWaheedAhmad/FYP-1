@@ -27,11 +27,18 @@ else
 include('header.php');
 
 ?>
-
-<div class="container-fluid px-4">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>profile</title>
+</head>
+<body>
+	<div class="container-fluid px-4">
     <h1 class="mt-4">Profile</h1>
     <ol class="breadcrumb mb-4">
-        <li class="breadcrumb-item active">View Profile</li>
+        <li class="breadcrumb-item active" style="COLOR:#000000 ; ">View Profile</li>
     </ol>
 	<div class="col-md-4">
 		<?php
@@ -62,13 +69,16 @@ include('header.php');
 					<p><?php echo $resident['name']; ?></p>
 				</div>
 				<div class="mb-3">
-					<label for="ssn" class="form-label">SSN</label>
+					<label for="ssn" class="form-label">Email</label>
 					<p><?php echo $resident['ssn']; ?></p>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+</body>
+</html>
+
 
 <?php
 

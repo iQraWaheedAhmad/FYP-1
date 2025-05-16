@@ -100,7 +100,7 @@ body {
     padding: 0; /* Add padding to the navbar-brand */
 }
 .navbar-brand img {
-    width: 50px; /* Set the width of the image */
+    width: 100px; /* Set the width of the image */
     height: auto; /* Maintain aspect ratio */
 }
 .sb-sidenav-menu {
@@ -195,4 +195,13 @@ main {
 .paginate_button:hover {
     background-color: #2563eb;
     border-color: #2563eb;
+}
+.text-center{
+   color: #ffffff;
+}
+.mt-4{
+    color: white;
+}
+li.breadcrumb-item.active {
+    color: #e2e2e2;
 }

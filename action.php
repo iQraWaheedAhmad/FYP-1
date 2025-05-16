@@ -10,7 +10,8 @@ if (isset($_POST['action'])) {
             'house_number',
             'street_name',
             'block_number',
-            'created_at'
+            'created_at',
+            'status'
         );
 
         // Define the table name and the primary key column

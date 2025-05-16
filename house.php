@@ -57,6 +57,7 @@ include('header.php');
 							<th>Street Name</th>
 							<th>Block Number</th>
 							<th>Created At</th>
+							<th>status</th>
 							<th>Action</th>
 						</tr>
 					</thead>
@@ -97,6 +98,7 @@ $(document).ready(function() {
             { "data": "street_name" },
             { "data" : "block_number"},
             { "data": "created_at"},
+			{ "data": "status"},
             {
         		"data": null,
         		"render": function(data, type, row) {

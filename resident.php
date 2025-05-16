@@ -71,7 +71,7 @@ include('header.php');
 						<tr>
 							<td>ID</td>
 							<th>Name</th>
-							<th>SSN</th>
+							<th>Email</th>
 							<th>House ID</th>
 							<th>Role</th>
 							<th>Created At</th>

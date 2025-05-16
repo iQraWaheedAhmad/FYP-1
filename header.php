@@ -70,7 +70,7 @@ $notification = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <div class="sb-sidenav-menu">
                      <!-- Navbar Brand-->
                      <a class="navbar-brand ps-3" href="index.php">
-                     <img src="logo.png" alt="logo">Housify</a>
+                     <img src="logo.png" alt="logo" height="500px" weight="500px" /></a>
                     <div class="nav">
                         <?php
                         if ($_SESSION['resident_role'] == 'admin') {
