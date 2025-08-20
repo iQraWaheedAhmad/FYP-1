@@ -25,7 +25,7 @@ $notification = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </head>
 
 <body>
-    <nav class="sb-topnav navbar">
+    <nav class="sb-topnav navbar justify-content-end">
         <!-- Navbar Brand
         <a class="navbar-brand ps-3" href="index.html">Housify</a> -->
         <!-- Sidebar Toggle
@@ -84,6 +84,9 @@ $notification = $stmt->fetchAll(PDO::FETCH_ASSOC);
                             <a class="nav-link" href="available.php">
                                 Available Houses
                             </a>
+                            <a class="nav-link" href="auction_admin.php">
+                                Auction Houses
+                            </a>
                             <a class="nav-link" href="maintenance.php">
                                 Maintenance Bills
                             </a>
@@ -127,6 +130,9 @@ $notification = $stmt->fetchAll(PDO::FETCH_ASSOC);
                             </a>
                             <a class="nav-link" href="Payment.php">
                                 Payments
+                            </a>
+                            <a class="nav-link" href="auction.php">
+                                Auction Houses
                             </a>
                         <?php
                         }

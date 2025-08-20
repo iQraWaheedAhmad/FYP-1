@@ -1,7 +1,7 @@
 <?php
 
 require_once 'config.php';
-
+//require('payment_stripe.php');
 if (!isset($_SESSION['resident_id']) && ($_SESSION['resident_role'] !== 'admin')) 
 {
     header('Location: logout.php');
@@ -49,7 +49,11 @@ include('header.php');
                 <div class="col col-6">
                     <h5 class="card-title">Payment Management</h5>
                 </div>
+                <div class="col col-6">
+                   <div class="float-end"><a href="payment_stripe_form.php" class="btn btn-success btn-sm">pay now</a></div>
+                </div>
             </div>
+            
         </div>
         <div class="card-body">
             <div class="table-responsive">

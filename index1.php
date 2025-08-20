@@ -121,7 +121,7 @@ if(isset($_POST['btn_login']))
                         
                         <div class="card">
                             <div class="card-header">
-                                <h3 class="card-title text-center">Login</h3>
+                                <h3 class="card-title text-center color-primary">Login</h3>
                             </div>
                             <div class="card-body">                            
                             <!-- Login form -->

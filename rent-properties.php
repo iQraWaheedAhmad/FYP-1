@@ -25,7 +25,7 @@
         <h2 class="h3 fw-bold mb-0">Recent Properties</h2>
       </div>
       <div class="col-6 text-end">
-        <a href="rent-properties.php" class="btn btn-outline-primary d-inline-flex align-items-center">
+        <a href="index1.php" class="btn btn-outline-primary d-inline-flex align-items-center">
           View All <i class="bi bi-arrow-right ms-2"></i>
         </a>
       </div>

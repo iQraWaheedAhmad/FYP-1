@@ -23,7 +23,7 @@ require_once 'config.php';
       background-position: center;
     }
 
-    .container {
+    .navbar_maine {
       max-width: 1200px;
       margin: 0 auto;
       padding: 0 1rem;
@@ -90,143 +90,7 @@ require_once 'config.php';
       }
     }
 
-    .mobile-menu {
-      display: none;
-      flex-direction: column;
-      margin-top: 0.5rem;
-    }
-
-    .mobile-menu a {
-      background: transparent;
-      color: white;
-      padding: 0.5rem 0.75rem;
-      border-radius: 0.375rem;
-      text-decoration: none;
-    }
-
-    .mobile-menu a:hover {
-      background-color: rgba(255, 255, 255, 0.1);
-    }
-
-    .hero {
-      position: relative;
-      width: 100%;
-      height: 500px;
-      overflow: hidden;
-    }
-
-    .hero img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .hero-overlay {
-      position: absolute;
-      inset: 0;
-      background-color: rgba(0, 0, 0, 0.4);
-    }
-
-    .hero-content {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      width: 100%;
-      transform: translateY(-50%);
-      text-align: center;
-      color: white;
-      padding: 1rem;
-    }
-
-    .hero h1 {
-      font-size: 2.5rem;
-      font-weight: bold;
-      margin-bottom: 1rem;
-      text-transform: uppercase;
-    }
-
-    .hero p {
-      font-size: 1.25rem;
-      margin-bottom: 2rem;
-    }
-
-    .search-box {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 0.75rem;
-      max-width: 900px;
-      margin: 0 auto;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    }
-
-    .search-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1rem;
-    }
-
-    @media (min-width: 768px) {
-      .search-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (min-width: 1024px) {
-      .search-grid {
-        grid-template-columns: repeat(4, 1fr);
-      }
-    }
-
-    .search-grid input,
-    .search-grid select,
-    .search-grid button {
-      height: 40px;
-      border-radius: 0.375rem;
-      padding: 0 0.75rem;
-      font-size: 1rem;
-      border: 1px solid #ccc;
-    }
-
-    .search-grid button {
-      background-color: #2563eb;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-
-    .search-grid button:hover {
-      background-color: #1d4ed8;
-    }
-
-    .rent-section {
-      background-color: #f9fafb;
-      padding: 3rem 1rem;
-      text-align: center;
-    }
-
-    .rent-section h2 {
-      font-size: 2rem;
-      font-weight: bold;
-      margin-bottom: 1rem;
-    }
-
-    .rent-section p {
-      margin-bottom: 1.5rem;
-      color: #6b7280;
-    }
-
-    .rent-section a {
-      background-color: #2563eb;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      border-radius: 0.5rem;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .rent-section a:hover {
-      background-color: #1d4ed8;
-    }
+ 
   </style>
 
   <script>
@@ -240,7 +104,7 @@ require_once 'config.php';
 
 <!-- Navbar -->
 <nav>
-  <div class="container">
+  <div class="navbar_maine">
     <a href="index.php" class="logo">
         <img src="logo.png" alt="Housing Management Society" height="100px">
       <!-- <i class="fas fa-home"></i> HousingManagementSociety -->
@@ -258,7 +122,7 @@ require_once 'config.php';
       <div class="bar"></div>
     </div>
   </div>
-  <div class="container">
+  <div class="navbar_main">
     <div class="mobile-menu" id="mobileMenu">
       <a href="index.php">Home</a>
       <a href="rent-properties.php">Rent List</a>

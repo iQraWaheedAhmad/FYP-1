@@ -56,16 +56,19 @@
       background: white;
       padding: 1.5rem;
       border-radius: 0.75rem;
-      max-width: 900px;
+      max-width: 800px;
       margin: 0 auto;
       box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     }
 
     .search-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1rem;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
 
     @media (min-width: 768px) {
       .search-grid {
@@ -79,12 +82,12 @@
       }
     }
 
-    .search-grid input,
+    .search-grid input, 
     .search-grid select,
     .search-grid button {
       height: 40px;
       border-radius: 0.375rem;
-      padding: 0 0.75rem;
+      padding: 0 4.75rem;
       font-size: 1rem;
       border: 1px solid #ccc;
     }
@@ -114,21 +117,20 @@
     <div class="search-box">
       <form action="search.php" method="GET">
         <div class="search-grid">
-          <input type="text" name="location" placeholder="Location" />
           
           <select name="type">
            
             <option value="house">House</option>
-            <option value="apartment">Plot</option>
             
           </select>
           <select name="status">
            
             <option value="rent">For Rent</option>
             <option value="sale">For Sale</option>
+            <option value="auction">For Auction</option>
           </select>
 
-          <button type="submit">Search</button>
+          <button type="submit" >Search</button>
         </div>
       </form>
     </div>

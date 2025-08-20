@@ -205,3 +205,16 @@ main {
 li.breadcrumb-item.active {
     color: #e2e2e2;
 }
+.btn btn-secondary{
+    background-color: #e2e2e2;
+
+}
+h3.card-title.text-center {
+    color: black;
+}
+li.breadcrumb-item.active {
+    color: #2563eb !important;
+}
+nav.sb-topnav.navbar {
+    justify-content: end !important;
+}

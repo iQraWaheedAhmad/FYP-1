@@ -3,6 +3,68 @@ header('Content-Type: application/json');
 require_once 'config.php';
 
 if (isset($_POST['action'])) {
+    if ($_POST['action'] == 'fetch_auction_house') {
+        // Define the columns that should be returned in the response
+        $columns = array(
+            'bid_id',
+            'property_id',
+            'start_price',
+            'current_bid',
+            'start_date',
+            'end_date',
+            'status',
+            'winner_id'
+        );
+
+        // Define the table name and the primary key column
+        $table = 'bidding';
+        $primaryKey = 'bid_id';
+
+        // Define the base query
+        $query = "SELECT " . implode(", ", $columns) . " FROM $table";
+
+        // Get the total number of records
+        $count = $pdo->query("SELECT COUNT(*) FROM $table")->fetchColumn();
+
+        // Define the filter query
+        $filterQuery = '';
+        if (!empty($_POST['search']['value'])) {
+            $search = $_POST['search']['value'];
+
+            $filterQuery = " WHERE (property_id LIKE '%$search%' OR start_price LIKE '%$search%' OR current_bid LIKE '%$search%' OR start_date LIKE '%$search%' OR end_date LIKE '%$search%' OR status LIKE '%$search%' OR winner_id LIKE '%$search%')";
+        }
+
+        // Add the filter query to the base query
+        $query .= $filterQuery;
+
+        // Get the number of filtered records
+        $countFiltered = $pdo->query($query)->rowCount();
+
+        // Add sorting to the query
+        $orderColumn = $columns[$_POST['order'][0]['column']];
+        $orderDirection = $_POST['order'][0]['dir'];
+        $query .= " ORDER BY $orderColumn $orderDirection";
+
+        // Add pagination to the query
+        $start = $_POST['start'];
+        $length = $_POST['length'];
+        $query .= " LIMIT $start, $length";
+
+        // Execute the query and fetch the results
+        $stmt = $pdo->query($query);
+        $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        // Build the response
+        $response = array(
+            "draw" => intval($_REQUEST['draw']),
+            "recordsTotal" => intval($count),
+            "recordsFiltered" => intval($countFiltered),
+            "data" => $results
+        );
+
+        // Convert the response to JSON and output it
+        echo json_encode($response);
+    }
     if ($_POST['action'] == 'fetch_house') {
         // Define the columns that should be returned in the response
         $columns = array(
@@ -339,7 +401,7 @@ if (isset($_POST['action'])) {
 		    "data" => $data
 		);
 
-		// Convert the response to JSON and output it
+		// Convert the response from array to JSON and output it
 		echo json_encode($response);
 	}
     if ($_POST['action'] == 'fetch_visitor') {
