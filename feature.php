@@ -74,8 +74,8 @@
     $featuresData = [
       [
         "icon" => "🏠",
-        "title" => "Society Management",
-        "description" => "Manage multiple housing societies with ease and efficiency"
+        "title" => "Housing Management",
+        "description" => "Manage multiple houses in the societies with ease and efficiency"
       ],
       [
         "icon" => "📄",

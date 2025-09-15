@@ -101,6 +101,7 @@ $(document).ready(function() {
         	data: {action : 'fetch_maintenance'}
         }
     });
+	
 
     $(document).on('click', '.delete_btn', function(){
     	if(confirm("Are you sure you want to remove this Maintenance Bill data?"))

@@ -50,7 +50,14 @@ include('header.php');
                     <h5 class="card-title">Payment Management</h5>
                 </div>
                 <div class="col col-6">
-                   <div class="float-end"><a href="payment_stripe_form.php" class="btn btn-success btn-sm">pay now</a></div>
+                    <?php
+                    if($_SESSION['resident_role'] == 'user')
+					{
+					?>
+					<div class="float-end"><a href="payment_stripe_form.php" class="btn btn-success btn-sm">pay now</a></div>
+					<?php
+					}
+					?>
                 </div>
             </div>
             

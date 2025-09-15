@@ -3,3 +3,8 @@
 *.tmp
 *.bak
 *.swp
+.payment_stripe.php 
+
+.stripe_payment.php 
+
+.stripe-php/README.md 

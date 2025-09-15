@@ -2,6 +2,12 @@
 
 require_once 'config.php';
 
+if (!isset($_SESSION['resident_id']) || $_SESSION['resident_role'] !== 'admin') 
+{
+  	header('Location: logout.php');
+  	exit();
+}
+
 if(isset($_POST['add_house']))
 {
 	// Validate the form data
@@ -38,11 +44,6 @@ if(isset($_POST['add_house']))
   	}
 }
 
-if (!isset($_SESSION['resident_id']) || $_SESSION['resident_role'] !== 'admin') 
-{
-  	header('Location: logout.php');
-  	exit();
-}
 
 include('header.php');
 

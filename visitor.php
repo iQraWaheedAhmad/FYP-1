@@ -62,7 +62,7 @@ include('header.php');
 							<td>ID</td>
 							<th>House Number</th>
 							<th>Visitor Name</th>
-							<th>Visitor SSN</th>
+							<th>Visitor Email</th>
 							<th>In Time</th>
 							<th>Out Time</th>
 							<th>Status</th>

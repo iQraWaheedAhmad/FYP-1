@@ -43,12 +43,12 @@ include('header.php');
 <div class="container-fluid px-4">
     <h1 class="mt-4" style="color: white;">Add Service</h1>
     <ol class="breadcrumb mb-4">
-    	<li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
+        <li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
         <li class="breadcrumb-item"><a href="service.php">Service Management</a></li>
         <li class="breadcrumb-item active">Add Service</li>
     </ol>
-	<div class="col-md-4">
-		<?php
+    <div class="col-md-4">
+        <?php
 
 		if(isset($errors))
         {
@@ -59,25 +59,26 @@ include('header.php');
         }
 
 		?>
-		<div class="card">
-			<div class="card-header">
-				<h5 class="card-title">Add Service</h5>
-			</div>
-			<div class="card-body">
-				<form method="post">
-				  	<div class="mb-3">
-				    	<label for="name">Service Name</label>
-				    	<input type="text" class="form-control" id="name" name="name" placeholder="Enter service name">
-				  	</div>
-				  	<div class="mb-3">
-				    	<label for="amount">Amount</label>
-				    	<input type="number" id="amount" name="amount" class="form-control" step="0.01" placeholder="Enter service charges">
-				  	</div>
-				  	<button type="submit" name="add_service" class="btn btn-primary">Add Services</button>
-				</form>
-			</div>
-		</div>
-	</div>
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title">Add Service</h5>
+            </div>
+            <div class="card-body">
+                <form method="post">
+                    <div class="mb-3">
+                        <label for="name">Service Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter service name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="amount">Amount</label>
+                        <input type="number" id="amount" name="amount" class="form-control" step="0.01"
+                            placeholder="Enter service charges">
+                    </div>
+                    <button type="submit" name="add_service" class="btn btn-primary">Add Services</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
 
 <?php

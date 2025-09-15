@@ -91,7 +91,7 @@ if (isset($_POST['action'])) {
         if (!empty($_POST['search']['value'])) {
             $search = $_POST['search']['value'];
 
-            $filterQuery = " WHERE (house_number LIKE '%$search%' OR street_name LIKE '%$search%' OR block_number LIKE '%$search%')";
+            $filterQuery = " WHERE (house_number LIKE '%$search%' OR street_name LIKE '%$search%' OR block_number LIKE '%$search%' OR status LIKE '%$search%')";
         }
 
         // Add the filter query to the base query

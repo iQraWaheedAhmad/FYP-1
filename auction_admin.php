@@ -55,7 +55,7 @@ include('header.php');
 							<td>Bid ID</td>
 							<th>House Number</th>
 							<th>Start Price</th>
-							<th>Current Bid</th>
+							<th>Current Bid price</th>
 							<th>Start Date</th>
                             <th>End Date</th>
 							<th>Status</th>

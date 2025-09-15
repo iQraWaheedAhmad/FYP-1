@@ -30,5 +30,6 @@ require_once 'config.php';
 <!-- Footer -->
 <?php include 'footer1.php'; ?>
 
+
 </body>
 </html>

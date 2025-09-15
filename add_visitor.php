@@ -66,7 +66,7 @@ include('header.php');
 ?>
 
 <div class="container-fluid px-4">
-    <h1 class="mt-4" style="color: white;">Add Visitor</h1>
+    <h1 class="mt-4">Add Visitor</h1>
     <ol class="breadcrumb mb-4">
     	<li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
         <li class="breadcrumb-item"><a href="visitor.php">Visitor Management</a></li>
@@ -92,7 +92,7 @@ include('header.php');
 				<form method="post">
                 <div class="mb-3">
                         <label for="house_id">House Number</label>
-                        <select id="house_id" name="house_id" class="form-control">
+                        <select id="house_id" name="house_id" class="form-control" optional>
                             <option value="">Select House</option>
                             <?php
                             // Query to get flat numbers from flats table
