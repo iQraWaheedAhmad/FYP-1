@@ -143,7 +143,7 @@ if(isset($_POST['btn_login']))
                 </div>
             </div>
             <div class="credits">
-                All Rights Reserved by Developers <a href=" https://github.com/Madeeha-Yaqoob/FYP" style="color: black; font-size: 12px; text-decoration: underline black 1px;"><b>Madeeha and iqra</b></a>
+                All Rights Reserved by Developers <a href=" https://github.com/Madeeha-Yaqoob/FYP" style="color: black; font-size: 12px; text-decoration: underline black 1px;"><b>Madeeha and iqra & Sana</b></a>
         </div>
         </div>
         

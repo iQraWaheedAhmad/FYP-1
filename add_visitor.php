@@ -95,7 +95,7 @@ include('header.php');
                         <select id="house_id" name="house_id" class="form-control" optional>
                             <option value="">Select House</option>
                             <?php
-                            // Query to get flat numbers from flats table
+                            // Query to get house numbers from house table
                             $stmt = $pdo->prepare('SELECT id, house_number, block_number FROM house ORDER BY house_number ASC');
                             $stmt->execute(); // Remove [$_SESSION['resident_id']]
                             $house_result = $stmt->fetchAll(PDO::FETCH_ASSOC);
